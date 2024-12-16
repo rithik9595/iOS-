@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9Zh-1U-dDj">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--First-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="delete" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTC-a0-8Xe">
+                                <rect key="frame" x="162" y="228" width="70" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.43265167999999998" green="1" blue="0.21445955750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="PUSH"/>
+                                <connections>
+                                    <action selector="clickPush2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D6k-fR-C9J"/>
+                                    <segue destination="aRY-5S-Sh1" kind="show" id="R2f-7k-8bP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AFM-eh-KLe">
+                                <rect key="frame" x="155" y="503" width="83" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.43265167999999998" green="1" blue="0.21445955750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Present"/>
+                                <connections>
+                                    <action selector="clickPresent2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yBN-VW-CPv"/>
+                                    <segue destination="aRY-5S-Sh1" kind="presentation" id="EiO-D0-sQA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="First" id="gjV-jp-T8U"/>
+                    <connections>
+                        <outlet property="present2" destination="AFM-eh-KLe" id="xbP-OP-ch7"/>
+                        <outlet property="push2" destination="xTC-a0-8Xe" id="BXi-3F-YEU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1066.4122137404579" y="3.5211267605633805"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="v6Y-yv-tMj">
+            <objects>
+                <viewController id="BQd-eo-yy3" customClass="secondViewController" customModule="delete" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xx8-le-uvA">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIi-Yb-sRN">
+                                <rect key="frame" x="160" y="155" width="58" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.43265167999999998" green="1" blue="0.21445955750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="POP"/>
+                                <connections>
+                                    <action selector="clickPop1:" destination="BQd-eo-yy3" eventType="valueChanged" id="h8v-qu-ci3"/>
+                                    <action selector="clickPop2:" destination="WbM-1i-a40" eventType="touchUpInside" id="aXe-F3-Xgy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PvF-pZ-Uxf">
+                                <rect key="frame" x="154" y="285" width="70" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.43265167999999998" green="1" blue="0.21445955750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="PUSH"/>
+                                <connections>
+                                    <action selector="clickPush2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Rn-T2-tap"/>
+                                    <action selector="clickPush3:" destination="BQd-eo-yy3" eventType="valueChanged" id="pg6-vX-wgz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="to8-O6-v9T">
+                                <rect key="frame" x="141" y="436" width="83" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.43265167999999998" green="1" blue="0.21445955750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Present"/>
+                                <connections>
+                                    <action selector="clickPresent2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t1o-Jx-lUg"/>
+                                    <action selector="clickPresent3:" destination="BQd-eo-yy3" eventType="valueChanged" id="Bjm-IF-MrD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQA-5g-IoP">
+                                <rect key="frame" x="151" y="589" width="90" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.43265167999999998" green="1" blue="0.21445955750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="DISMISS"/>
+                                <connections>
+                                    <action selector="clickDismiss2:" destination="BQd-eo-yy3" eventType="valueChanged" id="e9b-hC-4ye"/>
+                                    <action selector="clickDismiss3:" destination="WbM-1i-a40" eventType="touchUpInside" id="pV8-hO-OH2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cPR-cQ-Mdb"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="dismiss2" destination="GQA-5g-IoP" id="xAN-Yw-eua"/>
+                        <outlet property="pop1" destination="uIi-Yb-sRN" id="Nag-4p-jkd"/>
+                        <outlet property="present3" destination="to8-O6-v9T" id="Hds-sU-BjA"/>
+                        <outlet property="push3" destination="PvF-pZ-Uxf" id="j66-Ou-Qfr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JJi-Sm-qRS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1878.6259541984732" y="3.5211267605633805"/>
+        </scene>
+        <!--Third-->
+        <scene sceneID="YrM-cv-6k0">
+            <objects>
+                <viewController id="WbM-1i-a40" customClass="thirdViewController" customModule="delete" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PKT-gI-nWe">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k8E-vS-BO7">
+                                <rect key="frame" x="168" y="193" width="58" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.43265167999999998" green="1" blue="0.21445955750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="POP"/>
+                                <connections>
+                                    <action selector="clickPop2:" destination="WbM-1i-a40" eventType="touchUpInside" id="wHu-u6-H88"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lvD-LQ-hYv">
+                                <rect key="frame" x="134" y="403" width="126" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.40312483770000002" green="1" blue="0.31415385950000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="POPTOROOT"/>
+                                <connections>
+                                    <action selector="clickPopToroot1:" destination="WbM-1i-a40" eventType="touchUpInside" id="FBo-bQ-iHt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hc8-pL-Qjc">
+                                <rect key="frame" x="151" y="615" width="90" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.43265167999999998" green="1" blue="0.21445955750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="DISMISS"/>
+                                <connections>
+                                    <action selector="clickDismiss3:" destination="WbM-1i-a40" eventType="touchUpInside" id="SwR-QK-vhV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MFz-Xa-w3c"/>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Third" id="I9C-LK-0t3"/>
+                    <connections>
+                        <outlet property="dismiss3" destination="hc8-pL-Qjc" id="m2n-R9-Yui"/>
+                        <outlet property="pop2" destination="k8E-vS-BO7" id="Faa-V3-1o9"/>
+                        <outlet property="poptoroot1" destination="lvD-LQ-hYv" id="hII-vf-yyy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hod-L5-fdy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2744.2748091603053" y="3.5211267605633805"/>
+        </scene>
+        <!--Second-->
+        <scene sceneID="ILS-zo-yXz">
+            <objects>
+                <viewController id="aRY-5S-Sh1" customClass="secondViewController" customModule="delete" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uld-vd-gSf">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhm-dw-cyA">
+                                <rect key="frame" x="181" y="214" width="58" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.43265167999999998" green="1" blue="0.21445955750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="POP"/>
+                                <connections>
+                                    <action selector="clickPop1:" destination="aRY-5S-Sh1" eventType="touchUpInside" id="YI1-a1-bo0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jiC-Jc-kDk">
+                                <rect key="frame" x="166" y="353" width="70" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.43265167999999998" green="1" blue="0.21445955750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="PUSH"/>
+                                <connections>
+                                    <action selector="clickPush3:" destination="aRY-5S-Sh1" eventType="touchUpInside" id="U3Y-Y1-FP7"/>
+                                    <segue destination="WbM-1i-a40" kind="show" id="Efc-xP-Ohh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTJ-BK-yHx">
+                                <rect key="frame" x="160" y="639" width="90" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.43265167999999998" green="1" blue="0.21445955750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="DISMISS"/>
+                                <connections>
+                                    <action selector="clickDismiss2:" destination="aRY-5S-Sh1" eventType="touchUpInside" id="MFb-oP-R1z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAk-SH-wbk">
+                                <rect key="frame" x="153" y="514" width="83" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.43265167999999998" green="1" blue="0.21445955750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Present"/>
+                                <connections>
+                                    <action selector="clickPresent3:" destination="aRY-5S-Sh1" eventType="touchUpInside" id="rv3-3I-Fj0"/>
+                                    <segue destination="WbM-1i-a40" kind="presentation" id="egK-lk-rAz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hsg-8j-Tg1"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Second" id="xDr-ol-VSF"/>
+                    <connections>
+                        <outlet property="dismiss2" destination="iTJ-BK-yHx" id="Igp-dq-3Ks"/>
+                        <outlet property="pop1" destination="nhm-dw-cyA" id="yMb-p6-Pax"/>
+                        <outlet property="present3" destination="nAk-SH-wbk" id="jQQ-4q-p2M"/>
+                        <outlet property="push3" destination="jiC-Jc-kDk" id="yAL-GS-phA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tzP-gh-cmt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1878.6259541984732" y="3.5211267605633805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WSy-cV-TRa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9Zh-1U-dDj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LO6-Lb-SeV">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.43265167999999998" green="1" blue="0.21445955750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="mJm-lk-6f0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Fb-sh-Qab" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.69465648854961" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="R2f-7k-8bP"/>
+        <segue reference="Efc-xP-Ohh"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

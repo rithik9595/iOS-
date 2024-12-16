@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="J6y-XI-9yj">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--First-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NavigationControllert" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vOh-K5-DGb">
+                                <rect key="frame" x="149" y="268" width="125" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="PUSH">
+                                    <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="36"/>
+                                    <color key="baseForegroundColor" systemColor="tintColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="pushButtonClick1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SgQ-k7-lpD"/>
+                                    <segue destination="zAq-mK-8jd" kind="show" id="jJO-PH-96c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ScY-40-AYW">
+                                <rect key="frame" x="98" y="411" width="187" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="PRESENT">
+                                    <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="36"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="presentButtonClick1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ITp-PO-FKh"/>
+                                    <segue destination="zAq-mK-8jd" kind="presentation" modalTransitionStyle="flipHorizontal" id="1DD-FM-U5S"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="First" id="TLP-xa-Z9Q"/>
+                    <connections>
+                        <outlet property="presentButton1" destination="ScY-40-AYW" id="MtB-oA-a54"/>
+                        <outlet property="pushButton1" destination="ScY-40-AYW" id="kyD-Rd-mzN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1063.3587786259541" y="3.5211267605633805"/>
+        </scene>
+        <!--Second-->
+        <scene sceneID="NDG-L1-rKL">
+            <objects>
+                <viewController id="zAq-mK-8jd" customClass="seconViewController" customModule="NavigationControllert" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a2f-OU-gAe">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCW-ZN-KBc">
+                                <rect key="frame" x="47" y="306" width="264" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="POP TO ROOT">
+                                    <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="36"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="popTorootButtonClick1:" destination="zAq-mK-8jd" eventType="touchUpInside" id="cb9-Vy-8cn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eHN-ma-tpl">
+                                <rect key="frame" x="120" y="435" width="175" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="DISMISS">
+                                    <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="36"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="disimissButtonClick1:" destination="zAq-mK-8jd" eventType="touchUpInside" id="4C2-OF-ePe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wqL-S1-RrX">
+                                <rect key="frame" x="117" y="540" width="125" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="PUSH">
+                                    <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="36"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="pushButtonClick2:" destination="zAq-mK-8jd" eventType="touchUpInside" id="Uxt-iL-K3h"/>
+                                    <segue destination="6cg-Cg-UuM" kind="show" id="y5J-1j-87R"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zMA-0R-wPL">
+                                <rect key="frame" x="147" y="183" width="99" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="POP">
+                                    <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="36"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="popButtonClick1:" destination="zAq-mK-8jd" eventType="touchUpInside" id="jVY-He-x8R"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WRc-VL-FJm"/>
+                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Second" id="spS-ZX-9Z2">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="homekit" catalog="system" width="95.666666666666671" id="ItJ-MC-hbi">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="homebuttonClick:" destination="zAq-mK-8jd" id="7JO-7U-D2T"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="barbtn1" destination="ItJ-MC-hbi" id="TCp-5A-6Wq"/>
+                        <outlet property="dismissButton1" destination="eHN-ma-tpl" id="oGM-ux-eQI"/>
+                        <outlet property="popButton1" destination="zMA-0R-wPL" id="G2W-YS-xj2"/>
+                        <outlet property="popTOrootButton1" destination="UCW-ZN-KBc" id="MeH-OA-s1x"/>
+                        <outlet property="pushButton2" destination="wqL-S1-RrX" id="cgM-Hg-11o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oMM-dl-PXE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1947" y="4"/>
+        </scene>
+        <!--Third-->
+        <scene sceneID="2aW-Ez-YJU">
+            <objects>
+                <viewController id="6cg-Cg-UuM" customClass="thirdViewController" customModule="NavigationControllert" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GOU-Uq-tmW">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kPS-5B-l38">
+                                <rect key="frame" x="56" y="276" width="264" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="POP TO ROOT">
+                                    <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="36"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="popTorootButtonClick2:" destination="6cg-Cg-UuM" eventType="touchUpInside" id="253-wC-KLJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x3A-Gt-2Gg">
+                                <rect key="frame" x="127" y="158" width="99" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="POP">
+                                    <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="36"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="popButtonClick2:" destination="6cg-Cg-UuM" eventType="touchUpInside" id="2eC-Cg-PN5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zqG-VK-Rgu"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Third" id="vRR-Y7-TVc">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="homekit" catalog="system" id="hco-lY-TSg">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="homebuttonClick1:" destination="6cg-Cg-UuM" id="Ndh-id-wYe"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="barbtn2" destination="hco-lY-TSg" id="jXi-vZ-gP0"/>
+                        <outlet property="popButton2" destination="x3A-Gt-2Gg" id="MdK-Ke-PjD"/>
+                        <outlet property="popTorootButton2" destination="kPS-5B-l38" id="cRf-cn-MjB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mbq-tk-6Q1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2816" y="4"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Z3g-lB-VeZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="J6y-XI-9yj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PMh-tu-nVf">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.37715198709999997" green="1" blue="0.93893188569999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.83608250120000005" green="1" blue="0.8893380286" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="0AC-A0-hZI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8yS-T0-YFq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.64122137404578" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="1DD-FM-U5S"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="homekit" catalog="system" width="128" height="104"/>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

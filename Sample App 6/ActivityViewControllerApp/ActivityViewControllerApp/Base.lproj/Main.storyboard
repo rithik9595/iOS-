@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ActivityViewControllerApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GUK-Jb-0fI">
+                                <rect key="frame" x="16" y="690" width="361" height="54.666666666666629"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54.666666666666629" id="wAn-YA-ryg"/>
+                                </constraints>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="shareplay" catalog="system" title="shareplay">
+                                    <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="26"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="clickShare:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T0V-Cb-58V"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="URL Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xYQ-wU-qQI">
+                                <rect key="frame" x="16" y="127" width="361" height="34"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="M5B-Lh-mC3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter URL " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="891-3W-wGQ">
+                                <rect key="frame" x="16" y="193" width="361" height="34"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="PQ3-g9-Qbk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homekit" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="qTw-C5-ZmP">
+                                <rect key="frame" x="54" y="281.33333333333331" width="285" height="236.99999999999994"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yCU-7g-2Wy">
+                                <rect key="frame" x="141" y="580" width="110" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="u8K-gr-x12"/>
+                                </constraints>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Add Image">
+                                    <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="14"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="selectImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ulv-5c-Ee9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.8901960784313725" green="0.94901960784313721" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="qTw-C5-ZmP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="54" id="2fH-gd-4mJ"/>
+                            <constraint firstItem="xYQ-wU-qQI" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="7HH-No-W8t"/>
+                            <constraint firstItem="891-3W-wGQ" firstAttribute="top" secondItem="xYQ-wU-qQI" secondAttribute="bottom" constant="32" id="Cfw-Cu-SOR"/>
+                            <constraint firstItem="yCU-7g-2Wy" firstAttribute="centerX" secondItem="GUK-Jb-0fI" secondAttribute="centerX" id="JwO-Ag-ZzI"/>
+                            <constraint firstItem="xYQ-wU-qQI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="KDT-Ck-vpy"/>
+                            <constraint firstItem="891-3W-wGQ" firstAttribute="centerX" secondItem="qTw-C5-ZmP" secondAttribute="centerX" id="VET-LQ-eMs"/>
+                            <constraint firstItem="xYQ-wU-qQI" firstAttribute="trailing" secondItem="891-3W-wGQ" secondAttribute="trailing" id="W3a-kT-7wH"/>
+                            <constraint firstItem="qTw-C5-ZmP" firstAttribute="top" secondItem="891-3W-wGQ" secondAttribute="bottom" constant="53.999999999999943" id="We6-tU-VkN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GUK-Jb-0fI" secondAttribute="bottom" constant="73.333333333333371" id="Ywf-d7-ZY8"/>
+                            <constraint firstItem="891-3W-wGQ" firstAttribute="trailing" secondItem="GUK-Jb-0fI" secondAttribute="trailing" id="eCc-GO-Th5"/>
+                            <constraint firstItem="891-3W-wGQ" firstAttribute="leading" secondItem="GUK-Jb-0fI" secondAttribute="leading" id="pkZ-uS-Z6o"/>
+                            <constraint firstItem="yCU-7g-2Wy" firstAttribute="top" secondItem="qTw-C5-ZmP" secondAttribute="bottom" constant="61.333333333333485" id="slw-XZ-2gL"/>
+                            <constraint firstItem="GUK-Jb-0fI" firstAttribute="top" secondItem="yCU-7g-2Wy" secondAttribute="bottom" constant="60" id="wZm-Q1-n1Y"/>
+                            <constraint firstItem="xYQ-wU-qQI" firstAttribute="leading" secondItem="891-3W-wGQ" secondAttribute="leading" id="wuw-6U-bwg"/>
+                            <constraint firstItem="xYQ-wU-qQI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="68" id="zMn-XR-1VE"/>
+                            <constraint firstItem="yCU-7g-2Wy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="141" id="ziN-kz-0YV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="display" destination="qTw-C5-ZmP" id="sil-7T-kK0"/>
+                        <outlet property="displaybtn" destination="yCU-7g-2Wy" id="Hjs-c5-qPz"/>
+                        <outlet property="sharebtn" destination="GUK-Jb-0fI" id="6vS-Q4-66A"/>
+                        <outlet property="site" destination="891-3W-wGQ" id="eqQ-eq-ijH"/>
+                        <outlet property="urlname" destination="xYQ-wU-qQI" id="xGU-YH-J6M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.69465648854961" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="homekit" catalog="system" width="128" height="104"/>
+        <image name="shareplay" catalog="system" width="128" height="75"/>
+    </resources>
+</document>
